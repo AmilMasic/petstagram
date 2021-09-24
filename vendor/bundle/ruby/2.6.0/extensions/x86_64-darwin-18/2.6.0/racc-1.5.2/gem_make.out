@@ -1,0 +1,16 @@
+current directory: /Users/amilmasic/Development/code/ruby/rails_projects/petstagram/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+/Users/amilmasic/.rvm/rubies/ruby-2.6.1/bin/ruby -I /Users/amilmasic/.rvm/rubies/ruby-2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210924-96300-1ypbwjy.rb extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/amilmasic/Development/code/ruby/rails_projects/petstagram/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/amilmasic/Development/code/ruby/rails_projects/petstagram/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/amilmasic/Development/code/ruby/rails_projects/petstagram/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20210924-96300-tcng4/racc
