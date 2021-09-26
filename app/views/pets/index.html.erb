@@ -1,0 +1,10 @@
+<h2><%= link_to "Create a new pet", new_pet_path %> </h2>
+
+<hr>
+<% if user_signed_in? %>
+  
+<% end %>
+
+<% @pets.each do |pet| %>
+   <h4> <%= link_to pet.name, pet_path(pet) %> @ <%= pet.breed %>  </h4>
+<% end %>
