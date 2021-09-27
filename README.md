@@ -1,24 +1,30 @@
 # README
+## Petsagram
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple webapp that allows users to create their pets and upload images. Users can upload as many as they want, and delete as many as they want.
 
-Things you may want to cover:
+## Getting Started
+CD into the project folder and in your terminal run
+```
+rails s
+```
+to start your server
 
-* Ruby version
+## Prerequisites
+A text editor, terminal and a browser Be sure to run
+```
+bundle install
+rails db:migrate
+```
+## Deployment
+It should be ready to deploy out of the box. Follow the instructions from the service you wish to deploy on.
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+## Built With
+* [Rails]
+## Authors
+Amil Masic
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
