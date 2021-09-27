@@ -5,4 +5,6 @@
     <p> <%= image_tag image %> </p>
   <% end %>
   <br>
+  <%= link_to 'Edit', edit_pet_path(@pet.id) %>
+  <br>
   <%= button_to "Delete Pet", @pet, method: :delete, data: { confirm: "Really?" } %>

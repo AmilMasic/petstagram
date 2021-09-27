@@ -34,6 +34,27 @@ class PetsController < ApplicationController
     end
   end
 
+  def edit
+    @pet = Pet.find_by(id: params[:id])
+  end
+
+  def update
+    @pet = Pet.find(params[:id])
+    if params[:pet][:image_ids]
+      params[:pet][:image_ids].each do |image_id|
+        image = @pet.images.find(image_id)
+        image.purge
+      end
+    end
+    if @pet.update_attributes(pet_params)
+      @pet.images.attach(params[:pet][:images])
+      flash[:success] = "Edited"
+      redirect_to pets_url
+    else
+      render :edit
+    end
+  end
+
   def destroy
    @pet = Pet.find_by(id: params[:id])
    # if current_user == @pet.owner
