@@ -26,6 +26,14 @@ class PetsController < ApplicationController
     end
   end
 
+  def show
+    @pet = Pet.find_by(id: params[:id])
+    if !@pet
+      flash[:message] = "Pet was not found."
+      redirect_to pets_path
+    end
+  end
+
   private
 
   def pet_params
