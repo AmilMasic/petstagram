@@ -3,7 +3,7 @@ class PetsController < ApplicationController
     if user_signed_in?
     @pets = Pet.all.with_attached_images
     else
-      redirect_to root_path, notice: 'Thou Shalt Nought duuu dat :( Please sing in. '
+      redirect_to new_user_registration_path, notice: 'Thou Shalt Nought duuu dat :( Please sing in. '
     end
   end
 
