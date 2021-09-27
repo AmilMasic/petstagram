@@ -3,6 +3,6 @@
 <h2> Age: <%= @pet.age %> </h2>
   <% @pet.images.each do |image| %>
     <p> <%= image_tag image %> </p>
-
-
   <% end %>
+  <br>
+  <%= button_to "Delete Pet", @pet, method: :delete, data: { confirm: "Really?" } %>

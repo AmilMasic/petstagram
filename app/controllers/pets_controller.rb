@@ -34,6 +34,16 @@ class PetsController < ApplicationController
     end
   end
 
+  def destroy
+   @pet = Pet.find_by(id: params[:id])
+   # if current_user == @pet.owner
+     @pet.destroy
+     redirect_to pets_path, notice: 'Deleted'
+   # else
+   #   redirect_to pets_path, notice: 'You are not authorized to delete this pet.'
+   # end
+ end
+
   private
 
   def pet_params
