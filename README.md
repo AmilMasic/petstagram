@@ -4,6 +4,8 @@
 A simple webapp that allows users to create their pets and upload images. Users can upload as many as they want, and delete as many as they want.
 
 ## Getting Started
+This project was made with ruby 2.6.1 and yarn is a prerequisite.
+
 CD into the project folder and in your terminal run
 ```
 rails s
